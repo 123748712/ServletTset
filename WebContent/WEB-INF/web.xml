@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>ServletTest</display-name>
+	
+	<servlet>
+		<!-- 컨테이너 내에서 관리되는 서블릿 인스턴스의 이름 지정 -->
+		<servlet-name>T01_ServletLifeCycle</servlet-name>
+		<!-- 컨테이너 내에서 관리될 서블릿 클래스를 지정 -->
+		<servlet-class>kr.or.ddit.basic.T01_ServletLifeCycle</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>T01_ServletLifeCycle</servlet-name>
+		<url-pattern>/T01_ServletLifeCycle</url-pattern>
+	<!-- "/T01_ServletLifeCycle" 경로가 url에 작성되면 servlet 엘리먼트가 동작한다. -->
+	</servlet-mapping>
+</web-app>
