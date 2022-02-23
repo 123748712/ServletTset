@@ -5,8 +5,14 @@
 	<servlet>
 		<!-- 컨테이너 내에서 관리되는 서블릿 인스턴스의 이름 지정 -->
 		<servlet-name>T01_ServletLifeCycle</servlet-name>
+		
 		<!-- 컨테이너 내에서 관리될 서블릿 클래스를 지정 -->
 		<servlet-class>kr.or.ddit.basic.T01_ServletLifeCycle</servlet-class>
+		
+		<!-- startup 할 때 로드하는 엘리먼트
+			 0 이상의 정수값이 입력되면 startup할 때 init()메서드 호출 
+			 0에 가까울수록 우선적으로 로드됨  -->
+		<load-on-startup>1</load-on-startup>
 	</servlet>
 	
 	<servlet-mapping>
