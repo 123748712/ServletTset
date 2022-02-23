@@ -43,7 +43,7 @@ public class T02_ServletTest extends HttpServlet {
 		PrintWriter out = resp.getWriter(); // 프린트 기능을 담당하는 보조스트림 (편한 출력을 위함) / getWriter => 문자열에 많이 사용
 		out.println("name => " + name);
 		out.println("서블릿 경로 : " + req.getServletPath());
-		out.println("컨텍스트 경로 : " + req.getContextPath());
+		out.println("컨텍스트 경로 : " + req.getContextPath()); // 애플리케이션 구분 경로
 		// body에 위의 데이터를 넣어준 후 톰캣이 전송해준다.
 		
 		

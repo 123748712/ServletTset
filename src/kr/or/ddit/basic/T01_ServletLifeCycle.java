@@ -37,6 +37,8 @@ public class T01_ServletLifeCycle extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// 메서드 방식이 GET방식인 경우 호출됨
 		System.out.println("doGet() 호출됨...");
+		
+		throw new ServletException("일부로 발생시킨 예외");
 	}
 	
 	@Override
