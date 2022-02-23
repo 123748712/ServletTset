@@ -20,4 +20,25 @@
 		<url-pattern>/T01_ServletLifeCycle</url-pattern>
 	<!-- "/T01_ServletLifeCycle" 경로가 url에 작성되면 servlet 엘리먼트가 동작한다. -->
 	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>T02_ServletTest</servlet-name>
+		<servlet-class>kr.or.ddit.basic.T02_ServletTest</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>T02_ServletTest</servlet-name>
+		<url-pattern>/T02_ServletTest</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>T03_ServletParameterTest</servlet-name>
+		<servlet-class>kr.or.ddit.basic.T03_ServletParameterTest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>T03_ServletParameterTest</servlet-name>
+		<url-pattern>/T03_ServletParameterTest</url-pattern>
+	</servlet-mapping>
 </web-app>

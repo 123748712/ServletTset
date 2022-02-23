@@ -35,15 +35,22 @@ public class T02_ServletTest extends HttpServlet {
 		System.out.println("name => " + name);
 		
 		// 응답메시지 인코딩 설정(Content-Type의 charset=UTF-8과 동일함)
-		resp.setCharacterEncoding("UTF-8");
+//		resp.setCharacterEncoding("UTF-8");
 		// 응답메시지의 컨텐트 타입 설정
-		resp.setContentType("text/plain");
+		resp.setContentType("text/plain; charset=UTF-8");
 		
 		// 실제 수행할 로직(기능)이 시작되는 부분
-		PrintWriter out = resp.getWriter();
+		PrintWriter out = resp.getWriter(); // 프린트 기능을 담당하는 보조스트림 (편한 출력을 위함) / getWriter => 문자열에 많이 사용
 		out.println("name => " + name);
 		out.println("서블릿 경로 : " + req.getServletPath());
 		out.println("컨텍스트 경로 : " + req.getContextPath());
+		// body에 위의 데이터를 넣어준 후 톰캣이 전송해준다.
+		
+		
+		// 무조건 web.xml에 작성을 해주어야 한다.
+		// http://localhost/프로젝트명/클래스명 으로 접속
+		// http://localhost:8888/ServletTest/T02_ServletTest?name=입력할정보
+		// name 에 입력한 정보가 출력된다.
 	}
 	
 	@Override
