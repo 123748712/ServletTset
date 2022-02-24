@@ -65,4 +65,16 @@
 		<location>/T04_ErrorHandler</location>
 		<!-- Exception 타입으로도 설정한 location으로 이동이 가능하다. -->
 	</error-page>
+	
+	
+	<servlet>
+		<servlet-name>T05_ServletCookieTest</servlet-name>
+		<servlet-class>kr.or.ddit.basic.T05_ServletCookieTest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>T05_ServletCookieTest</servlet-name>
+		<url-pattern>/T05_ServletCookieTest</url-pattern>
+	</servlet-mapping>
+	
 </web-app>

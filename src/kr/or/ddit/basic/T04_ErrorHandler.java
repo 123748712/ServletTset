@@ -60,7 +60,8 @@ public class T04_ErrorHandler extends HttpServlet {
 		out.println("</body>");
 		out.println("</html>");
 	}
-	
+	// Parameter => 사용자가 작성한 데이터 (get만 존재 return => String)
+	// Attribute => 미리 정보를 삽입한 후 가져올 수 있다.(set, get 존재, return => Object)
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	}
