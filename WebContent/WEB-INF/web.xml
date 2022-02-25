@@ -136,6 +136,17 @@
 	</servlet-mapping>
 	
 	
+	<servlet>
+		<servlet-name>T12_ImageServlet</servlet-name>
+		<servlet-class>kr.or.ddit.basic.T12_ImageServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>T12_ImageServlet</servlet-name>
+		<url-pattern>/T12_ImageServlet</url-pattern>
+	</servlet-mapping>
+	
+	
 	
 	<listener>
 		<listener-class>kr.or.ddit.basic.MyServletRequestListener</listener-class>
