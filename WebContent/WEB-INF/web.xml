@@ -21,7 +21,7 @@
 	<!-- "/T01_ServletLifeCycle" 경로가 url에 작성되면 servlet 엘리먼트가 동작한다. -->
 	</servlet-mapping>
 	
-	
+
 	<servlet>
 		<servlet-name>T02_ServletTest</servlet-name>
 		<servlet-class>kr.or.ddit.basic.T02_ServletTest</servlet-class>
@@ -101,6 +101,54 @@
 		<servlet-name>T07_ServletContextTest</servlet-name>
 		<url-pattern>/T07_ServletContextTest</url-pattern>
 	</servlet-mapping>
+
+	
+	<servlet>
+		<servlet-name>T09_ServletRequestListenerTest</servlet-name>
+		<servlet-class>kr.or.ddit.basic.T09_ServletRequestListenerTest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>T09_ServletRequestListenerTest</servlet-name>
+		<url-pattern>/T09_ServletRequestListenerTest</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>T10_SessionListenerTest</servlet-name>
+		<servlet-class>kr.or.ddit.basic.T10_SessionListenerTest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>T10_SessionListenerTest</servlet-name>
+		<url-pattern>/T10_SessionListenerTest</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>T11_ServletContextListenerTest</servlet-name>
+		<servlet-class>kr.or.ddit.basic.T11_ServletContextListenerTest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>T11_ServletContextListenerTest</servlet-name>
+		<url-pattern>/T11_ServletContextListenerTest</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<listener>
+		<listener-class>kr.or.ddit.basic.MyServletRequestListener</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>kr.or.ddit.basic.MyHttpSessionListener</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>kr.or.ddit.basic.MyServletContextListener</listener-class>
+	</listener>
+	
 	
 	
 	<filter>
@@ -131,4 +179,5 @@
 		<filter-name>T08_ServletFilter2</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	
 </web-app>
