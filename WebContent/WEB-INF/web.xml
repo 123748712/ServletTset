@@ -102,4 +102,33 @@
 		<url-pattern>/T07_ServletContextTest</url-pattern>
 	</servlet-mapping>
 	
+	
+	<filter>
+		<filter-name>T08_ServletFilter</filter-name>
+		<filter-class>kr.or.ddit.basic.T08_ServletFilter</filter-class>
+		<init-param> <!-- <filter-name> , <filter-class> 뒤에 기술해야 한다. -->
+			<param-name>init-param</param-name>
+			<param-value>필터용초기값</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>T08_ServletFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<!-- 모든 것들이 filter를 거치도록 url 설정 -->
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>T08_ServletFilter2</filter-name>
+		<filter-class>kr.or.ddit.basic.T08_ServletFilter2</filter-class>
+		<init-param> <!-- <filter-name> , <filter-class> 뒤에 기술해야 한다. -->
+			<param-name>init-param</param-name>
+			<param-value>필터용초기값2</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>T08_ServletFilter2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 </web-app>
