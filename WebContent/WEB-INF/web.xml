@@ -92,4 +92,14 @@
 		<session-timeout>1</session-timeout>
 	</session-config>
 	
+	<servlet>
+		<servlet-name>T07_ServletContextTest</servlet-name>
+		<servlet-class>kr.or.ddit.basic.T07_ServletContextTest</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>T07_ServletContextTest</servlet-name>
+		<url-pattern>/T07_ServletContextTest</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
